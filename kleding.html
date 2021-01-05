@@ -14,3 +14,24 @@
   background-color: ccebff;
 }
 </style>
+
+<body>
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="raphael-min.js"></script>
+<script src="jQuery.circleProgressBar.js"></script>
+<div class="percent>
+            <p style="display:none;">8%</p> </div>
+                                    $('.percent').percentageLoader({
+  valElement: 'p',
+  strokeWidth: 8
+});
+                                    $('.percent').percentageLoader({
+  valElement: 'p',
+  strokeWidth: 20,
+  bgColor: '#d9d9d9',
+  ringColor: '#d53f3f',
+  textColor: '#9a9a9a',
+  fontSize: '12px',
+  fontWeight: 'normal'
+});
+                          
