@@ -1,6 +1,28 @@
 <h1><center> Activiteiten die er te doen zijn </h1></center>
 <!DOCTYPE html>
 <html>
+ <link rel="stylesheet" href="simpleGauge.css">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+        crossorigin="anonymous">
+</script>
+<script src="simpleGauge.js"></script>
+<div class="gauge-wrap" data-value="10"></div>
+<div class="gauge-wrap" data-value="90"></div>
+ $(function() {
+
+  $('.gauge-wrap').simpleGauge();
+
+});
+ $('.gauge-wrap').simpleGauge({
+  width: '200',
+  hueLow: '1', 
+  hueHigh: '128', 
+  saturation: '100%', 
+  lightness: '50%',
+  gaugeBG: '#1b1b1f', 
+  parentBG: '#323138'
+});
 
 
 <head>
